@@ -1,0 +1,235 @@
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2b/Melk_-_Abbey_-_Library.jpg');
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.wrapper {
+  padding-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
+  position: relative;
+  padding: 64px 0 90px 0;
+  min-height: 100%;
+}
+
+/* animation */
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  margin-left: 5px;
+  top: 2px;
+
+  -webkit-animation: rotating 1s linear infinite;
+  -moz-animation: rotating 1s linear infinite;
+  -ms-animation: rotating 5s linear infinite;
+  -o-animation: rotating 1s linear infinite;
+  animation: rotating 1s linear infinite;
+}
+
+/* navbar */
+
+.navbar-default .navbar-brand {
+  color: #FF8C00 !important;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav .dropdown-menu .glyphicon {
+  margin-right: 10px;
+}
+
+.home_btns {
+  font-size: 30px;
+  font-style: bold;
+  background: #FF8C00;
+  background-image: -webkit-linear-gradient(top, #FF8C00, #f7b060);
+  background-image: -moz-linear-gradient(top, #FF8C00, #f7b060);
+  background-image: -ms-linear-gradient(top, #FF8C00, #f7b060);
+  background-image: -o-linear-gradient(top, #FF8C00, #f7b060);
+  text-align: center;
+  list-style: none;
+  overflow: hidden;
+  padding:5px;
+  margin-left:250px;
+  margin-top:50px;
+  margin-right:250px;
+  border-radius: 5px;
+
+}
+
+.user {
+  /*float: left;*/
+  /*padding: 11px 0;*/
+  /*width: 40px;*/
+}
+
+/* home */
+
+.banner {
+  background:#FF8C00;
+  color: #fff;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 20px;
+  opacity: .95;
+
+}
+
+.banner h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.banner p {
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.banner .glyphicon {
+  font-size: 40px;
+}
+
+.features {
+  padding: 40px 0;
+}
+
+.features h2 {
+  font-size: 26px;
+  color: white;
+}
+
+.features h2 .glyphicon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.features {
+  text-align: justify;
+}
+
+/* footer */
+
+.footer {
+  text-align: center;
+  border-top: 3px solid #E5E5E5;
+  padding: 20px 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  background-color: white;
+  opacity: .9;
+}
+
+.white_background {
+  padding: 50px;
+  background-color: white;
+  border-radius: 3px;
+  opacity: .9;
+}
+/* books */
+
+.bookcard img {
+  margin: 0 auto;
+}
+
+.bookcard p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+/* dashboard */
+
+.book-field {
+  min-width: 300px;
+  margin-right: 20px;
+  color:white;
+}
+
+.book-form {
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+
+/* new book */
+
+.select-wrapper {
+  margin-bottom: 20px;
+}
+
+.select-wrapper button {
+  vertical-align: top;
+}
+
+.Select {
+  display: inline-block;
+  margin-right: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.Select-value {
+  padding-right: 80px;
+}
+
+/* books */
+
+.book h4, .book p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.book img {
+  border: 1px solid #e5e5e5;
+  height: 190px;
+}
